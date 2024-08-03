@@ -27,13 +27,6 @@ This script automates the installation process of Python 3.11.6 on your system. 
 - If you choose not to continue (`N`), the installation will be cancelled.
 - After installation, Python 3.11.6 will be available on your system.
 
-
-```bash```
-
-     - REMEMBER TO  "ADD PYTHON.EXE TO PATH"
-
------
-
 ## Usage Example
 
 ```
