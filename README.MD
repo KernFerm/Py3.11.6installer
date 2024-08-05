@@ -28,15 +28,9 @@ This script automates the installation process of Python 3.11.6 on your system. 
 - After installation, Python 3.11.6 will be available on your system.
 
 
-```bash```
-
-     - REMEMBER TO  "ADD PYTHON.EXE TO PATH"
-
------
-
 ## Usage Example
 
-```bash
+```
 @echo off
 
 echo This script will install Python 3.11.6 on your system.
