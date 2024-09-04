@@ -26,7 +26,8 @@ echo Installing Python 3.11.6...
 if %ERRORLEVEL% equ 0 (
     echo Python 3.11.6 has been installed successfully.
     echo Adding Python Scripts directory to system PATH...
-    setx PATH "%PATH%;C:\Program Files\Python311\Scripts"
+    setx PATH "%PATH%;C:\Programs\Python\Python311\Scripts"
+    setx PATH "%PATH%;C:\Programs\Python\Python311"
     echo Python Scripts directory has been added to the system PATH.
 ) else (
     echo Installation failed. Error code: %ERRORLEVEL%
