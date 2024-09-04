@@ -13,8 +13,8 @@ For detailed instructions on how to download the repository, please click on the
 
 ## Usage
 
-1. Download the script (`install_python_3.11.6.bat`) to your desired location.
-2. Double-click on the script to run it.
+1. Download the script (`python-3.11.6.bat`) to your desired location.
+2. Right Click  `Run As ADMIN` on the script to run it.
 
 ## Instructions
 
