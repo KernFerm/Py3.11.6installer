@@ -1,3 +1,8 @@
+## Support the Project ⭐
+
+If you find this project useful, please give it a star! Your support is appreciated and helps keep the project growing. 🌟
+
+
 # 🐍 Python 3.11.6 Installation Script 🚀
 
 This script **automates the installation** of Python 3.11.6 on your system and automatically adds Python to the system PATH! 🛠️
