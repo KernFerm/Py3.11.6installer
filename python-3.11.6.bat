@@ -6,7 +6,7 @@ set /p choice="Enter your choice (Y/N): "
 if /i "%choice%" neq "Y" (
     echo Installation cancelled by the user.
     pause
-    exit
+    exit /b 1
 )
 
 echo Downloading Python 3.11.6...
@@ -16,7 +16,7 @@ bitsadmin /transfer "PythonDownloadJob" /download /priority normal https://www.p
 if not exist "%cd%\python-3.11.6.exe" (
     echo Download failed. Please check your internet connection or URL and try again.
     pause
-    exit
+    exit /b 2
 )
 
 echo Installing Python 3.11.6...
@@ -25,12 +25,21 @@ echo Installing Python 3.11.6...
 :: Check the result of the installation
 if %ERRORLEVEL% equ 0 (
     echo Python 3.11.6 has been installed successfully.
-    echo Adding Python Scripts directory to system PATH...
-    setx PATH "%PATH%;C:\Programs\Python\Python311\Scripts"
-    setx PATH "%PATH%;C:\Programs\Python\Python311"
-    echo Python Scripts directory has been added to the system PATH.
 ) else (
     echo Installation failed. Error code: %ERRORLEVEL%
+    pause
+    exit /b 3
 )
 
+echo Adding Python Scripts directory to system PATH...
+:: Retrieve the current PATH variable and append Python directories
+set "newpath=%PATH%;C:\Programs\Python\Python311\Scripts;C:\Programs\Python\Python311"
+
+:: Use setx to update the system PATH permanently
+setx PATH "%newpath%" /M
+
+:: Update PATH for the current session
+set PATH=%newpath%
+
+echo Python Scripts directory has been added to the system PATH.
 pause
